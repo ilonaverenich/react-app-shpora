@@ -1,4 +1,4 @@
-import {HashRouter , Routes, Route} from "react-router-dom";
+import {BrowserRouter , Routes, Route} from "react-router-dom";
 import './App.css';
 import Components from './components/components/Components';
 import Home from "./components/home/Home";
@@ -22,7 +22,7 @@ import Antdesing from "./components/antdesing/Antdesing";
 
 function App() {
   return (<div>
-    <HashRouter>
+    <BrowserRouter>
         <Routes>
         <Route path='/' element = {<Home />}></Route>
         <Route path='/home' element = {<Home />}></Route>
@@ -44,7 +44,7 @@ function App() {
         <Route path='/antd' element = {<Antdesing />}></Route>
         <Route path='*' element = {<None />}></Route>
       </Routes> 
-    </HashRouter > 
+    </BrowserRouter > 
     </div>
 );
 }
